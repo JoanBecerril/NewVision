@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Vision ERROR 404</title>
+    <link rel="shortcut icon" href="./src/LOGO/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="oscuro">
+        <header class="flex">
+            <div class="nav">
+                <img src="./src/LOGO/logoletrasgrandes.png" alt="">
+            </div>
+        </header>
+        <div class="flex img">
+            <img src="./src/404.png" alt="">
+        </div>
+        <div class="texto">
+            <h4>Error de cliente</h4>
+            <p>Lo sentimos, la pagina que busca no se ha encontrado</p>
+            <br>
+            <div class="flex">
+                <button class="volverinicio"><a href="./login.html">Volver a pantalla de inicio</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    html {
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    body::before {
+        content: "";
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: url(./src/FONDO\ COLOR\ 3.jpg);
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+        height: 20vh;
+    }
+    
+    #oscuro {
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .nav img {
+        height: 12vh;
+    }
+    
+    .texto {
+        margin-top: 15vh;
+    }
+    
+    .img {
+        height: 55vh;
+        margin-bottom: -15vh;
+    }
+    
+    .img img {
+        height: 80vh;
+    }
+    
+    .texto h4 {
+        color: white;
+        font-size: 4.5vh;
+        font-weight: 500;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .texto p {
+        color: white;
+        font-size: 3vh;
+        font-weight: 500;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .texto p a {
+        font-weight: 400;
+        color: white;
+    }
+    
+    .volverinicio {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 40vh;
+        padding: 10px;
+        font-size: 2vh;
+        border: none;
+        background: linear-gradient(to right, #b41d6e, #043689);
+        border-radius: 4vh;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .volverinicio a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .volverinicio:hover {
+        text-decoration: none;
+        background: white;
+        color: #0444ab;
+        transition: 0.5s;
+    }
+    
+    .volverinicio:hover a {
+        text-decoration: none;
+        color: #0444ab;
+        transition: 0.5s;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @media only screen and (max-width: 780px) {
+        .nav img {
+            height: 6vh;
+        }
+        .texto {
+            margin-top: 5vh;
+        }
+        .img {
+            height: 45vh;
+            margin-bottom: -5vh;
+        }
+        .img img {
+            height: 45vh;
+        }
+        .texto h4 {
+            font-size: 3vh;
+        }
+        .texto p {
+            font-size: 1.5vh;
+        }
+        .volverinicio {
+            width: 32vh;
+            font-size: 1.8vh;
+        }
+    }
+</style>
+
+</html>
